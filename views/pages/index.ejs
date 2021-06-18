@@ -1,0 +1,49 @@
+  <%- include('../partials/head'); %>
+
+  <!-- additional scripts  like add this social sharing button , meta description , google analytics 
+  etc.  below this line
+-->
+
+
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <div >
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    
+    <button type="button" class="btn btn-link">Link</button>
+   
+    <h2>This is great</h2>
+
+    <p>Welcome to templating using EJS</p>
+     <h2>variable</h2>
+     <P><%= tagline %>
+      আনন্দবাজার পত্রিকা </P>   
+
+     <ul class="mx-auto">
+          <% mascots.forEach(function(mascot) { %>
+            <li>
+              <strong><%= mascot.name %></strong>
+              representing <%= mascot.organization %>,
+              born <%= mascot.birth_year %>
+            </li>
+          <% }); %>
+        </ul>
+  </div>
+</main>
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>

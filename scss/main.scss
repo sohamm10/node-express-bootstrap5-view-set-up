@@ -1,0 +1,17 @@
+//default bootstrap style
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+@import"../node_modules/bootstrap/scss/bootstrap";
+
+     //any override of style in bootstrap  should always come after importing the bootstrap i t means here
+// Your variable overrides
+      
+h2{    
+     color:green;  
+           
+} 
+body{     
+     color:black;   
+
+}
